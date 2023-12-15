@@ -45,7 +45,7 @@ while users_choice != "5":
     elif (users_choice) == "5":
         continue # Skips to the next loop
     else:
-        print("Invalid Inpuit")
+        print("Invalid Input")
 
 
 print("Thank you for using todo list!!!")
