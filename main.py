@@ -9,8 +9,7 @@ try:
     print("In try block")
     # if it throws error, it means the file doesn't exsist
     # if no error, it meanms the file exsist
-except Exception as e:
-    print(type(e))
+except FileNotFoundError:
     # Now, we know the file doesn't exsist
     # Creat the file
     todo_file = open(file_name, "w")
@@ -43,7 +42,7 @@ while users_choice != "5":
     elif (users_choice) == "4":
         view_todo(file_name)
     elif (users_choice) == "5":
-        continue # Skips to the next loop
+        continue
     else:
         print("Invalid Input")
 
